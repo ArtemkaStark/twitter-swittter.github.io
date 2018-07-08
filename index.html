@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Твиттер - Артём Ермаков</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<!-- Font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- // Font-awesome -->
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,400i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<!-- //Fonts -->
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- left column -->
+			<div class="col-md-4">
+				<div class="card mb-3">
+					<div class="profile-background"></div>
+					<div class="profile-avatar">
+						<img src="img/ava.jpg" alt="Аватар пользователя">
+					</div>
+					<div class="card-body">
+						<h1 class="profile-title">Артём Ермаков</h1>
+						<div class="profile-description">
+							<p>Web-Development</p>
+						</div>
+					</div>
+					<ul class="stats">
+						<li class="stats-item">
+							<b class="stats-title">Твиты</b>
+							<b class="stats-count" id="tweetscounter"></b>
+						</li>
+						<li class="stats-item">
+							<b class="stats-title">Лайки</b>
+							<b class="stats-count">57</b>
+						</li>
+						<li class="stats-item">
+							<b class="stats-title">Читают</b>
+							<b class="stats-count">57</b>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- // left colum -->
+
+			<!-- Right colum -->
+			<div class="col-md-8">
+				<!-- Add twit -->
+				<div class="card mb-3">
+					<div class="card-body">
+						<form id="postNewTweet">
+						  <div class="form-group">
+						    <input id="tweetText" type="text" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
+						  </div>
+						  <button type="submit" class="btn btn-primary">Твитнуть</button>
+						</form>
+					</div>
+				</div>
+				<!-- // Add twit -->
+				<div class="card card-title-only">
+					<div class="h4 mb-0">Твиты пользователя</div>
+				</div>
+				<!-- TweetList -->
+				<div id="tweetsList">
+					<!-- Single twett -->
+					<div class="card tweet-card">
+						<div class="tweet-date"></div>
+						<div class="tweet-text">
+							<p></p>
+						</div>
+					</div>
+					<!-- // Single tweet -->
+				</div>
+				<!-- //TweetList -->
+				<!-- Footer -->
+				<footer class="footer">
+					<div class="footer-copyright">
+						<p>Артём Ермаков 2018</p>
+						<a target="_blank" href="https://vk.com/athldeptt"><i class="fab fa-vk"></i></a>
+					</div>
+				</footer>
+				<!-- //Footer -->
+			</div>
+			<!-- // Rightleft colum -->
+		</div>
+	</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>
